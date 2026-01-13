@@ -1,0 +1,18 @@
+(
+    name: "Steelbore",
+    is_dark: true,
+    // The Steelbore Palette Logic
+    colors: (
+        accent_blue: (14, 20, 29),    // Charcoal Navy
+        accent_orange: (254, 107, 0), // Vibrant Orange
+        bg_color: (14, 20, 29),       // Charcoal Navy
+        fg_color: (226, 232, 240),    // Off-white for readability
+        header_bg: (20, 46, 70),      // Midnight Blue
+        header_fg: (212, 113, 1),     // Tawny Orange
+    ),
+    spacing: (
+        gaps: 10,
+        border_width: 2,
+        radius: 0, // Industrial "Sharp" edges, no rounding
+    ),
+)
