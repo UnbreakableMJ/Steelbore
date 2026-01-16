@@ -1,0 +1,33 @@
+# STEELBORE // NEOVIDE CONFIGURATION
+# Identity: Charcoal Navy / Vibrant Orange
+# Role: Hardware-Accelerated Tactical Editor
+
+[settings]
+# --- Visual HUD ---
+# Official Steelbore Palette
+background_color = "#0E141D"
+cursor_color = "#FE6B00"
+
+# --- Typography ---
+# Using the project standard font
+font_family = "JetBrainsMono Nerd Font"
+font_size = 12.0
+
+# --- The "Machine Intelligence" HUD Effect ---
+# Smooth, fluid cursor movement
+cursor_animation_length = 0.1
+cursor_trail_size = 0.5
+cursor_vfx_mode = "railgun" # Adds a high-tech streak to movements
+cursor_vfx_particle_speed = 20.0
+cursor_vfx_particle_density = 5.0
+cursor_vfx_color = "#FE6B00"
+
+# --- Window Protocol ---
+# Industrial sharp corners handled at the window manager level (COSMIC)
+# but we disable the Neovide title bar for a seamless TUI experience.
+decorations = "none"
+transparency = 0.95 # Subtle depth against the Charcoal Navy desktop
+
+# --- Performance Tier ---
+# Matching the Steelbore Velocity/Cheetah energy
+refresh_rate = 144
