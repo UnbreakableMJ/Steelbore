@@ -24,7 +24,7 @@
     alacritty
     wezterm
     rio
-    cosmic-term
+    #cosmic-term
     ptyxis
 
     # 4. Text Editing
@@ -42,7 +42,6 @@
     broot
     unstable.superfile
     unstable.kondo
-    # cosmic-files (Handled by cosmic module?)
     unstable.spacedrive
 
     # 6. Multimedia
@@ -99,7 +98,6 @@
     sniffglue
     mullvad-vpn
     unstable.pika-backup
-    # cosmic-store
 
     # 12. User Requested Packages (Verified 25.11)
     ironbar
