@@ -17,6 +17,12 @@ let
   '';
 in
 {
+  imports = [
+    ./leftwm.nix
+    ./niri.nix
+    ./cosmic.nix
+  ];
+
   services.greetd = {
     enable = true;
     settings = {
@@ -27,11 +33,6 @@ in
     };
   };
 
-  # Graphical session support
-  services.xserver.windowManager.leftwm.enable = true;
-  programs.niri.enable = true;
-  services.desktopManager.cosmic.enable = true;
-  services.displayManager.cosmic-greeter.enable = false; # We use tuigreet for the TTY flow
 
   environment.systemPackages = [
     gui-script

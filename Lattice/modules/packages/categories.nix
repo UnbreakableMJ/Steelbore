@@ -1,4 +1,4 @@
-{ pkgs, unstable, ... }:
+{ pkgs, unstable, emacs-ng, rivetui, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -6,9 +6,8 @@
     greetd.tuigreet
 
     # 2. Desktop Environments & Window Managers
-    leftwm
-    niri
     # cosmic-de is handled by the module in flake.nix
+    # leftwm and niri moved to gui/ modules
 
     # Launcher
     onagre
@@ -36,7 +35,7 @@
     lapce
     neovide
     cosmic-edit
-    # emacs-ng (Check if available or use overlay)
+    emacs-ng.packages.${pkgs.system}.default
 
     # 5. File Management
     yazi
@@ -81,7 +80,6 @@
     unstable.mission-center
     unstable.sniffnet
     eww
-    # ironbar
     # authenticator
 
     # 9. Communication
@@ -91,20 +89,24 @@
     # RivetUI
     newsboat
     fractal
-    # newsflash
 
     # 10. Productivity & AI
     aichat
-    # gemini-cli
-    # claude-cli
     unstable.appflowy
 
     # 11. Security & Networking
     rustscan
     sniffglue
-    # rqbit
     mullvad-vpn
     unstable.pika-backup
     # cosmic-store
+
+    # 12. User Requested Packages (Verified 25.11)
+    ironbar
+    rqbit
+    gemini-cli
+    claude-code
+    newsflash
+    rivetui.packages.${pkgs.system}.default
   ];
 }

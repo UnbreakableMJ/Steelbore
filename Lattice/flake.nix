@@ -6,9 +6,11 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
     nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
+    emacs-ng.url = "github:emacs-ng/emacs-ng";
+    rivetui.url = "github:rivet-gg/rivetui";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, ... }: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, ... }: 
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -19,7 +21,7 @@
   in {
     nixosConfigurations.lattice = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = { inherit unstable; };
+      specialArgs = { inherit unstable emacs-ng rivetui; };
       modules = [
         {
           nix.settings = {
