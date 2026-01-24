@@ -3,15 +3,15 @@
 let
   gui-script = pkgs.writeShellScriptBin "gui" ''
     echo "Lattice GUI Selector"
-    echo "1) LeftWM (X11)"
+    echo "1) COSMIC (Wayland)"
     echo "2) Niri (Wayland)"
-    echo "3) COSMIC (Wayland)"
+    echo "3) LeftWM (X11)"
     read -p "Select environment: " choice
 
     case $choice in
-      1) exec dwm ;; # Placeholder for LeftWM start command
+      1) exec start-cosmic ;;
       2) exec niri ;;
-      3) exec start-cosmic ;;
+      3) exec startx /usr/bin/env leftwm ;;
       *) echo "Invalid choice";;
     esac
   '';
