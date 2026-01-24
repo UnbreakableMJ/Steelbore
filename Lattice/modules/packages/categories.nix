@@ -1,4 +1,4 @@
-{ pkgs, unstable, emacs-ng, rivetui, ... }:
+{ pkgs, unstable, emacs-ng, rivetui, goldwarden, twarden, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -98,6 +98,11 @@
     sniffglue
     mullvad-vpn
     unstable.pika-backup
+
+    # 12. Bitwarden Setup
+    rbw
+    goldwarden.packages.${pkgs.system}.default
+    twarden.packages.${pkgs.system}.default
 
     # 12. User Requested Packages (Verified 25.11)
     ironbar

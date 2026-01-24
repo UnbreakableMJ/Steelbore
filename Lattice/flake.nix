@@ -8,9 +8,11 @@
     nixos-cosmic.inputs.nixpkgs.follows = "nixpkgs";
     emacs-ng.url = "github:emacs-ng/emacs-ng";
     rivetui.url = "github:rivet-gg/rivetui";
+    goldwarden.url = "github:quexten/goldwarden";
+    twarden.url = "github:p-m-p/twarden";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, ... }: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, goldwarden, twarden, ... }: 
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -21,7 +23,7 @@
   in {
     nixosConfigurations.lattice = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = { inherit unstable emacs-ng rivetui; };
+      specialArgs = { inherit unstable emacs-ng rivetui goldwarden twarden; };
       modules = [
         {
           nix.settings = {
