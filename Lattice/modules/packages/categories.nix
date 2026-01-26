@@ -2,12 +2,14 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # 1. Login Managers (Packages only, services in gui/default.nix)
+    # 1. Login Managers
     greetd.tuigreet
+    lemurs
 
     # 2. Desktop Environments & Window Managers
-    # cosmic-de is handled by the module in flake.nix
-    # leftwm and niri moved to gui/ modules
+    niri
+    leftwm
+    # cosmic-de is handled by the nixos-cosmic module
 
     # Launcher
     onagre
@@ -24,8 +26,9 @@
     alacritty
     wezterm
     rio
-    #cosmic-term
+    warp-terminal
     ptyxis
+    cosmic-term
 
     # 4. Text Editing
     helix
@@ -35,7 +38,10 @@
     lapce
     neovide
     cosmic-edit
+    tau
+    amp-cli
     emacs-ng.packages.${pkgs.system}.default
+    code-oss
 
     # 5. File Management
     yazi
@@ -43,9 +49,12 @@
     unstable.superfile
     unstable.kondo
     unstable.spacedrive
+    cosmic-files
+    gptman
 
     # 6. Multimedia
     mpv
+    yt-dlp
     ncspot
     unstable.termusic
     viu
@@ -70,8 +79,9 @@
     eza
     zoxide
     paru
+    cargo-update
 
-    # 8. System Monitoring & Panels
+    # 8. System Monitoring & Tools
     bottom
     bandwhich
     macchina
@@ -79,19 +89,27 @@
     unstable.mission-center
     unstable.sniffnet
     eww
-    # authenticator
+    rbw
+    goldwarden.packages.${pkgs.system}.default
+    twarden.packages.${pkgs.system}.default
+    sbctl # Secure Boot / Lanzaboote tool
 
-    # 9. Communication
+    # 9. Communication & Internet
     iamb
-    # rumatui
-    # disrust
-    # RivetUI
     newsboat
     fractal
+    newsflash
+    xh
+    monolith
+    lychee
+    wget2
+    wget
+    curl
 
     # 10. Productivity & AI
     aichat
     unstable.appflowy
+    affine
 
     # 11. Security & Networking
     rustscan
@@ -99,17 +117,11 @@
     mullvad-vpn
     unstable.pika-backup
 
-    # 12. Bitwarden Setup
-    rbw
-    goldwarden.packages.${pkgs.system}.default
-    twarden.packages.${pkgs.system}.default
-
-    # 12. User Requested Packages (Verified 25.11)
+    # 12. Steelbore Verification & Custom
     ironbar
     rqbit
     gemini-cli
     claude-code
-    newsflash
     rivetui.packages.${pkgs.system}.default
   ];
 }

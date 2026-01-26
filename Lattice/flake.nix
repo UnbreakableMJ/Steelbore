@@ -10,9 +10,13 @@
     rivetui.url = "github:rivet-gg/rivetui";
     goldwarden.url = "github:quexten/goldwarden";
     twarden.url = "github:p-m-p/twarden";
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.4.2";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, goldwarden, twarden, ... }: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, goldwarden, twarden, lanzaboote, ... }: 
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -36,6 +40,8 @@
         ./modules/packages
         ./modules/gui
         ./modules/core/theme.nix
+        ./modules/core/settings.nix
+        lanzaboote.nixosModules.lanzaboote
       ];
     };
   };
