@@ -123,5 +123,11 @@
     gemini-cli
     claude-code
     rivetui.packages.${pkgs.system}.default
+
+    # 13. Emulation & Compatibility
+    dosbox-staging
+    dosbox-x
+    ruffle
+    qemu
   ];
 }
