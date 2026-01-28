@@ -10,14 +10,12 @@
     # sudo-rs (managed by security.sudo-rs)
 
     # 2. Desktop Environments & Window Managers
-    niri
-    leftwm
     # cosmic-de (managed by module)
+    # leftwm (managed by module)
+    # niri (managed by module) 
     # dankmaterialshell (Missing in standard channels)
 
     # Launcher
-    anyrun
-    unstable.rlaunch
     # onagre (Might need overlay)
     
     # Input
@@ -28,23 +26,21 @@
     zellij
     atuin
     starship
-    # brush (Unpackaged?)
+    brush
     ion
     alacritty
     wezterm
     rio
-    cosmic-term
     # t-rec (Check availability)
 
     # 4. Text Editing
     helix
     # rsvim (Unpackaged?)
     amp
-    # msedit
+    msedit
     zed-editor
     lapce
     tau
-    cosmic-edit
     neovide
     emacs-ng.packages.${pkgs.system}.default
     code-oss
@@ -53,7 +49,6 @@
     yazi
     broot
     unstable.superfile
-    cosmic-files
     unstable.spacedrive
     gptman
     unstable.disktui
@@ -134,7 +129,6 @@
     goldwarden.packages.${pkgs.system}.default
     authenticator
     unstable.pika-backup
-    # cosmic-store
 
     # 12. Networking & Internet
     xh
@@ -161,6 +155,5 @@
     dosbox-x
     ruffle
     qemu
-    # dosbox-x (Duplicated in list, removed)
   ];
 }

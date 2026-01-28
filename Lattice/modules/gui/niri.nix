@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, unstable, ... }:
 
 {
   programs.niri.enable = true;
@@ -9,6 +9,7 @@
     xwayland-satellite # For X11 app support if needed
     waybar
     ironbar
+    unstable.anyrun
   ];
 
   # System-wide Niri configuration hint
