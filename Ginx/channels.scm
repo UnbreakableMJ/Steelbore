@@ -1,4 +1,4 @@
-;; Project Jinx - Channels Configuration
+;; Project Ginx - Channels Configuration
 ;; This file defines the channels from which Guix pulls packages.
 ;; We include 'nonguix' for non-free software support (drivers, firmware, unbranded browsers).
 

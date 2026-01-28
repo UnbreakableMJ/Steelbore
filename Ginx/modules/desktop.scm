@@ -3,14 +3,15 @@
   #:use-module (gnu services base)
   #:use-module (gnu services desktop)
   #:use-module (gnu services xorg)
+  #:use-module (gnu services xorg)
   #:use-module (guix packages)
   #:use-module (guix gexp)
-  ;#:use-module (gnu packages wm) ; for niri if packaged
-  ;#:use-module (gnu packages admin) ; for greetd
+  #:use-module (modules custom-desktop) ; Import our custom Niri/Ironbar
+  #:use-module (gnu packages admin) ; for tuigreet
   #:export (steelbore-desktop-services))
 
 ;;
-;; Niri Service Definition (Placeholder / Custom)
+;; Niri Service Definition
 ;;
 (define niri-service-type
   (service-type
@@ -18,7 +19,7 @@
    (description "Run Niri compositor.")
    (extensions
     (list (service-extension profile-service-type
-                             (const (list))))) ;; Add niri package here
+                             (const (list niri ironbar))))) ;; Install Niri and Ironbar
    (default-value #f)))
 
 ;;

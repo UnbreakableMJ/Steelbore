@@ -1,6 +1,6 @@
-;; Project Jinx - Main System Configuration
+;; Project Ginx - Main System Configuration
 ;;
-;; "Steelbore Jinx" - GNU Guix Edition
+;; "Steelbore Ginx" - GNU Guix Edition
 ;;
 
 (use-modules (gnu)
@@ -16,7 +16,7 @@
 (use-package-modules bootloaders certs fonts shells vim curl wget version-control)
 
 (operating-system
-  (host-name "jinx")
+  (host-name "ginx")
   (timezone "UTC")
   (locale "en_US.utf8")
 
@@ -34,11 +34,11 @@
   ;; Filesystems (Generic placeholder - needs actual hardware map)
   (file-systems (cons* (file-system
                          (mount-point "/")
-                         (device (file-system-label "JINX_ROOT"))
+                         (device (file-system-label "GINX_ROOT"))
                          (type "ext4"))
                        (file-system
                          (mount-point "/boot/efi")
-                         (device (file-system-label "JINX_EFI"))
+                         (device (file-system-label "GINX_EFI"))
                          (type "vfat"))
                        %base-file-systems))
 

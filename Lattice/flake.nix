@@ -10,13 +10,15 @@
     rivetui.url = "github:rivet-gg/rivetui";
     goldwarden.url = "github:quexten/goldwarden";
     twarden.url = "github:p-m-p/twarden";
+    home-manager.url = "github:nix-community/home-manager/release-25.11";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
     lanzaboote = {
       url = "github:nix-community/lanzaboote/v0.4.2";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, goldwarden, twarden, lanzaboote, ... }: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, nixos-cosmic, emacs-ng, rivetui, goldwarden, twarden, home-manager, lanzaboote, ... }: 
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -42,6 +44,12 @@
         ./modules/core/theme.nix
         ./modules/core/settings.nix
         lanzaboote.nixosModules.lanzaboote
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.mj = import ./hosts/lattice/home.nix;
+        }
       ];
     };
   };

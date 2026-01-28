@@ -3,131 +3,164 @@
 {
   environment.systemPackages = with pkgs; [
     # 1. Login Managers
+    greetd.greetd
     greetd.tuigreet
     lemurs
+    # cosmic-greeter (managed by module)
+    # sudo-rs (managed by security.sudo-rs)
 
     # 2. Desktop Environments & Window Managers
     niri
     leftwm
-    # cosmic-de is handled by the nixos-cosmic module
+    # cosmic-de (managed by module)
+    # dankmaterialshell (Missing in standard channels)
 
     # Launcher
-    onagre
     anyrun
-    rlaunch
+    unstable.rlaunch
+    # onagre (Might need overlay)
+    
+    # Input
+    xremap # May require flake input/module
 
     # 3. Terminal & Shell Environment
     nushell
     zellij
     atuin
     starship
-    unstable.brush
-    unstable.ion
+    # brush (Unpackaged?)
+    ion
     alacritty
     wezterm
     rio
-    warp-terminal
-    ptyxis
     cosmic-term
+    # t-rec (Check availability)
 
     # 4. Text Editing
     helix
-    unstable.msedit
-    unstable.antigravity
+    # rsvim (Unpackaged?)
+    amp
+    # msedit
     zed-editor
     lapce
-    neovide
-    cosmic-edit
     tau
-    amp-cli
+    cosmic-edit
+    neovide
     emacs-ng.packages.${pkgs.system}.default
     code-oss
-
-    # 5. File Management
+    
+    # 5. File & Disk Management
     yazi
     broot
     unstable.superfile
-    unstable.kondo
-    unstable.spacedrive
     cosmic-files
+    unstable.spacedrive
     gptman
+    unstable.disktui
+    dua
+    dust
+    fclones
+    kondo
 
-    # 6. Multimedia
+    # 6. Multimedia & Processing
     mpv
     yt-dlp
     ncspot
-    unstable.termusic
+    termusic
     viu
     vlc
     loupe
     psst
-    unstable.amberol
-    unstable.shortwave
-    unstable.mousai
-    unstable.gyroflow
+    amberol
+    shortwave
+    mousai
+    gyroflow
+    ffmpeg
+    rav1e
+    gifski
+    oxipng
+    video-trimmer
+    # gydl
 
-    # 7. System Replacements (Modern Unix)
-    uutils-coreutils
-    procs
-    gping
-    dog
-    tokei
-    topgrade
-    just
+    # 7. Core Utilities (The "Modern Unix" Stack)
+    fd
     ripgrep
     bat
     eza
+    sd
+    ouch
     zoxide
+    uutils-coreutils
+    procs
+    tokei
+    
+    # 8. Package & System Management
+    topgrade
     paru
     cargo-update
-
-    # 8. System Monitoring & Tools
+    # linutil
+    flatpak
+    guix
+    nix
+    kmon
+    
+    # 9. System Monitoring & Panels
+    ironbar
+    eww
     bottom
     bandwhich
     macchina
-    trippy
-    unstable.mission-center
+    mission-center
     unstable.sniffnet
-    eww
-    rbw
-    goldwarden.packages.${pkgs.system}.default
-    twarden.packages.${pkgs.system}.default
-    sbctl # Secure Boot / Lanzaboote tool
+    sbctl
 
-    # 9. Communication & Internet
+    # 10. Communication
+    # matrix-commander-rs
     iamb
-    newsboat
+    # rumatui
+    # disrust
+    rivetui.packages.${pkgs.system}.default
+    # lemoncord
+    # fastcord
+    # ebou
     fractal
     newsflash
+
+    # 11. Security & Encryption
+    age
+    rage
+    sequoia
+    rbw
+    goldwarden.packages.${pkgs.system}.default
+    authenticator
+    unstable.pika-backup
+    # cosmic-store
+
+    # 12. Networking & Internet
     xh
     monolith
     lychee
-    wget2
-    wget
-    curl
-
-    # 10. Productivity & AI
-    aichat
-    unstable.appflowy
-    affine
-
-    # 11. Security & Networking
+    # ssh-rs
     rustscan
     sniffglue
     mullvad-vpn
-    unstable.pika-backup
+    trippy
+    wget2
+    curl
+    unstable.rqbit
 
-    # 12. Steelbore Verification & Custom
-    ironbar
-    rqbit
+    # 13. Productivity & AI
+    # appflowy
+    affine
+    aichat
     gemini-cli
     claude-code
-    rivetui.packages.${pkgs.system}.default
 
-    # 13. Emulation & Compatibility
+    # 14. Emulation & Compatibility
     dosbox-staging
     dosbox-x
     ruffle
     qemu
+    # dosbox-x (Duplicated in list, removed)
   ];
 }
