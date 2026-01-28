@@ -20,8 +20,8 @@
   (timezone "UTC")
   (locale "en_US.utf8")
 
-  ;; Kernel: Non-free for broad hardware support (Steelbore Philosophy: Utility first)
-  (kernel linux) ; Using standard for now, switch to linux-nonfree if Nonguix active
+  ;; Kernel: Project XanMod (High Performance Desktop)
+  (kernel linux-xanmod) 
   (initrd microcode-initrd)
   (firmware (list linux-firmware))
 

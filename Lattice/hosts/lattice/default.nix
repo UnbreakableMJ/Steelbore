@@ -5,9 +5,10 @@
     ./hardware-configuration.nix # Assuming generic or to be generated
   ];
 
-  # Bootloader
+  # Bootloader & Kernel
   boot.loader.limine.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.linuxPackages_xanmod;
 
   networking.hostName = "lattice";
 
