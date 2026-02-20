@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; Set System Theme to Dark (Taskbar, Start Menu)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"AppsUseLightTheme"=dword:00000000
+"SystemUsesLightTheme"=dword:00000000
+
+; Set Accent Color to Steel Blue (#4B7EB0 -> B07E4B in Hex reversed for DWORD)
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"AccentColor"=dword:ffB07E4B
+"ColorPrevalence"=dword:00000001

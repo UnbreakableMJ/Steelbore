@@ -1,0 +1,15 @@
+#panel {
+    background-color: #000027;
+    font-weight: bold;
+    height: 32px;
+}
+
+.panel-button {
+    color: #D98E32;
+}
+
+.panel-button:hover {
+    background-color: #050530;
+    box-shadow: inset 0 -2px 0 #4B7EB0;
+    color: #E6E6F0;
+}

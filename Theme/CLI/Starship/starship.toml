@@ -1,0 +1,123 @@
+# Steelbore Starship Theme
+# Industrial | High Contrast | WCAG Compliant
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+$python\
+$docker_context\
+$cmd_duration\
+$line_break\
+$character"""
+
+# ------------------------------------------------------------------------------
+# PALETTE DEFINITION
+# ------------------------------------------------------------------------------
+[palettes.steelbore]
+void_navy = "#000027"
+deep_plate = "#050530"
+molten_amber = "#D98E32"
+steel_blue = "#4B7EB0"
+radium_green = "#50FA7B"
+red_oxide = "#FF5C5C"
+liquid_cool = "#8BE9FD"
+slag_grey = "#6272A4"
+chrome_white = "#E6E6F0"
+
+palette = "steelbore"
+
+# ------------------------------------------------------------------------------
+# CORE MODULES
+# ------------------------------------------------------------------------------
+
+# The Prompt Character (The Tip of the Drill)
+[character]
+success_symbol = "[❯](bold radium_green)"
+error_symbol = "[❯](bold red_oxide)"
+vicmd_symbol = "[❮](bold steel_blue)"
+
+# Directory (Structural Context)
+[directory]
+style = "bold steel_blue"
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " 🔒"
+read_only_style = "red_oxide"
+
+# Git Branch (Active Readout)
+[git_branch]
+symbol = " "
+style = "bold molten_amber"
+format = "on [$symbol$branch]($style) "
+
+# Git Status (System Integrity)
+[git_status]
+style = "red_oxide"
+format = "[$all_status$ahead_behind]($style) "
+conflicted = "⚔️ "
+ahead = "⇡ "
+behind = "⇣ "
+diverged = "⇕ "
+untracked = "⁇ "
+stashed = "📦 "
+modified = "📝 "
+staged = "++ "
+renamed = "» "
+deleted = "🗑 "
+
+# Command Duration (Performance Metrics)
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration](bold liquid_cool) "
+
+# ------------------------------------------------------------------------------
+# LANGUAGE RUNTILMES (Tooling)
+# ------------------------------------------------------------------------------
+
+[c]
+symbol = "C "
+style = "liquid_cool"
+format = "via [$symbol($version )]($style)"
+
+[docker_context]
+symbol = " "
+style = "steel_blue"
+format = "via [$symbol$context]($style) "
+
+[golang]
+symbol = " "
+style = "liquid_cool"
+format = "via [$symbol($version )]($style)"
+
+[java]
+symbol = " "
+style = "liquid_cool"
+format = "via [$symbol($version )]($style)"
+
+[nodejs]
+symbol = " "
+style = "liquid_cool"
+format = "via [$symbol($version )]($style)"
+
+[python]
+symbol = "🐍 "
+style = "liquid_cool"
+format = "via [$symbol($version )]($style)"
+
+[rust]
+symbol = " "
+style = "red_oxide" # Hot metal color for Rust
+format = "via [$symbol($version )]($style)"

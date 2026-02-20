@@ -1,0 +1,32 @@
+layout {
+    // Structural Gaps
+    gaps 16
+
+    // The Focus Ring: The primary indicator of the active window
+    focus-ring {
+        width 4
+        
+        // Active: Gradient from Steel Blue to Molten Amber (Heated Metal Effect)
+        active-gradient from="#4B7EB0" to="#D98E32" angle=45
+
+        // Inactive: Deep Plate (Recedes into background)
+        inactive-color "#050530"
+    }
+
+    // Inner Border: Subtle definition for all windows
+    border {
+        width 1
+        active-color "#4B7EB0"
+        inactive-color "#000027"
+    }
+}
+
+// Window Rules for transparency/opacity
+window-rule {
+    // Make terminals slightly transparent to show the Void Navy wallpaper
+    match app-id="^alacritty$"
+    match app-id="^org.gnome.Terminal$"
+    match app-id="^kitty$"
+
+    opacity 0.95
+}

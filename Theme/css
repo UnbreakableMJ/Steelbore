@@ -1,0 +1,34 @@
+:root {
+    /* Steelbore Core */
+    --sb-void-navy: #000027;
+    --sb-molten-amber: #D98E32;
+    --sb-steel-blue: #4B7EB0;
+    --sb-radium-green: #50FA7B;
+    --sb-red-oxide: #FF5C5C;
+    --sb-liquid-cool: #8BE9FD;
+
+    /* Semantic Mappings */
+    --bg-primary: var(--sb-void-navy);
+    --bg-secondary: #050530;
+    /* Calculated lighter navy */
+    --text-primary: var(--sb-molten-amber);
+    --text-secondary: #E6E6F0;
+    /* Chrome White */
+    --ui-border: var(--sb-steel-blue);
+    --ui-focus: var(--sb-liquid-cool);
+    --state-success: var(--sb-radium-green);
+    --state-error: var(--sb-red-oxide);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* High Visibility Button Style */
+.btn-primary {
+    background-color: var(--sb-steel-blue);
+    color: var(--sb-void-navy);
+    border: 1px solid var(--sb-liquid-cool);
+}

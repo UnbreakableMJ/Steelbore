@@ -1,0 +1,95 @@
+{
+    "name": "Steelbore",
+    "type": "dark",
+    "colors": {
+        "editor.background": "#000027",
+        "editor.foreground": "#D98E32",
+        "activityBar.background": "#000027",
+        "sideBar.background": "#050530",
+        "sideBar.foreground": "#D98E32",
+        "sideBarSectionHeader.background": "#000027",
+        "statusBar.background": "#4B7EB0",
+        "statusBar.foreground": "#000027",
+        "tab.activeBackground": "#000027",
+        "tab.activeBorderTop": "#FF5C5C",
+        "tab.inactiveBackground": "#050530",
+        "editorLineNumber.foreground": "#6272A4",
+        "editorCursor.foreground": "#E6E6F0",
+        "editorSelection.background": "#4B7EB040",
+        "terminal.background": "#000027",
+        "terminal.foreground": "#D98E32",
+        "focusBorder": "#4B7EB0",
+        "input.background": "#050530",
+        "input.foreground": "#D98E32",
+        "list.activeSelectionBackground": "#4B7EB040",
+        "list.hoverBackground": "#4B7EB020"
+    },
+    "tokenColors": [
+        {
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#6272A4",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": [
+                "keyword",
+                "storage.type",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#4B7EB0",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": [
+                "string",
+                "string.template"
+            ],
+            "settings": {
+                "foreground": "#50FA7B"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.function",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "#8BE9FD"
+            }
+        },
+        {
+            "scope": [
+                "variable",
+                "meta.definition.variable"
+            ],
+            "settings": {
+                "foreground": "#E6E6F0"
+            }
+        },
+        {
+            "scope": [
+                "constant.numeric",
+                "constant.language"
+            ],
+            "settings": {
+                "foreground": "#D98E32"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.tag",
+                "markup.heading"
+            ],
+            "settings": {
+                "foreground": "#FF5C5C"
+            }
+        }
+    ]
+}

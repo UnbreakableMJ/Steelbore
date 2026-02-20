@@ -1,0 +1,59 @@
+/* Steelbore XFCE4 Definition */
+
+/* --- Core Palette --- */
+@define-color bg_color #000027;
+@define-color fg_color #D98E32;
+@define-color selected_bg_color #4B7EB0;
+@define-color selected_fg_color #000027;
+@define-color tooltip_bg_color #050530;
+@define-color tooltip_fg_color #E6E6F0;
+
+/* --- General GTK Styling --- */
+window,
+dialog,
+popover {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* --- XFCE Panel Specifics --- */
+.xfce4-panel {
+    background-color: #000027;
+    color: #D98E32;
+    font-weight: bold;
+}
+
+.xfce4-panel button:hover {
+    background-color: #4B7EB0;
+    color: #000027;
+}
+
+/* --- Whisker Menu --- */
+#whiskermenu-window {
+    background-color: #050530;
+    color: #D98E32;
+}
+
+#whiskermenu-window entry {
+    background-color: #000027;
+    color: #E6E6F0;
+    border: 1px solid #4B7EB0;
+}
+
+#whiskermenu-window button:hover {
+    background-color: #4B7EB0;
+    color: #000027;
+}
+
+/* --- Desktop Icons --- */
+XfdesktopIconView.view {
+    background-color: transparent;
+    color: #E6E6F0;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+XfdesktopIconView.view:selected {
+    background-color: alpha(#4B7EB0, 0.6);
+    color: #000027;
+    border-radius: 4px;
+}

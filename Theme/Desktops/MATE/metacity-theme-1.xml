@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info>
+  <name>Steelbore</name>
+  <author>Steelbore System</author>
+  <copyright>No Warranty</copyright>
+  <description>Industrial Void Navy Theme</description>
+</info>
+
+<frame_geometry name="normal" has_title="true" title_scale="medium" parent="normal_base">
+  <distance name="left_width" value="1"/>
+  <distance name="right_width" value="1"/>
+  <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="1"/>
+  <distance name="right_titlebar_edge" value="1"/>
+  <distance name="title_vertical_pad" value="4"/>
+  <border name="title_border" left="2" right="2" top="2" bottom="2"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+</frame_geometry>
+
+<draw_ops name="draw_frame_normal">
+  <rectangle color="#000027" x="0" y="0" width="width" height="height" filled="true"/>
+  
+  <rectangle color="#4B7EB0" x="0" y="0" width="width" height="height" filled="false"/>
+
+  <rectangle color="#050530" x="1" y="1" width="width-2" height="title_height" filled="true"/>
+  
+  <line color="#4B7EB0" x1="0" y1="title_height" x2="width" y2="title_height"/>
+</draw_ops>
+
+<frame_style name="normal" geometry="normal">
+  <piece position="entire_background" draw_ops="draw_frame_normal"/>
+  <piece position="title" draw_ops="draw_title_text"/>
+</frame_style>
+
+<draw_ops name="draw_title_text">
+  <title color="#D98E32" x="0" y="0"/> </draw_ops>
+
+<window type="normal" style_set="normal"/>
+</metacity_theme>

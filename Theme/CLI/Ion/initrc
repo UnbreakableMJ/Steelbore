@@ -1,0 +1,19 @@
+# Steelbore Ion Theme
+# Add to ~/.config/ion/initrc
+
+let void_navy = "000027"
+let molten_amber = "D98E32"
+let steel_blue = "4B7EB0"
+let radium_green = "50FA7B"
+let red_oxide = "FF5C5C"
+
+fn PROMPT
+    let dir = "${c::0x${steel_blue}}${PWD}${c::reset}"
+    let symbol = "❯"
+    
+    if eq $? 0
+        print "${dir} ${c::0x${radium_green}}${symbol}${c::reset} "
+    else
+        print "${dir} ${c::0x${red_oxide}}${symbol}${c::reset} "
+    end
+end

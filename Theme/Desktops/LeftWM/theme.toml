@@ -1,0 +1,19 @@
+# Steelbore LeftWM Theme
+
+border_width = 2
+margin = 4
+workspace_margin = 4
+default_border_color = "#050530"  # Deep Plate
+floating_border_color = "#50FA7B" # Radium Green
+focused_border_color = "#4B7EB0"  # Steel Blue
+
+# Gutters (Gap between windows)
+gutter = [
+    { side = "Top", value = 0, render = false },
+    { side = "Bottom", value = 0, render = false },
+    { side = "Left", value = 0, render = false },
+    { side = "Right", value = 0, render = false },
+]
+
+[on_new_window]
+enabled = true

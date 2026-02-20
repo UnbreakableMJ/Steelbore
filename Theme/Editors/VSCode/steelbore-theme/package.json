@@ -1,0 +1,22 @@
+{
+    "name": "steelbore",
+    "displayName": "Steelbore Theme",
+    "description": "A high-contrast, industrial dark theme using WCAG-compliant Void Navy and Molten Amber.",
+    "version": "1.0.0",
+    "publisher": "YourName",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Steelbore",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Steelbore-color-theme.json"
+            }
+        ]
+    }
+}

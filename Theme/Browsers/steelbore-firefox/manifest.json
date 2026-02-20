@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Steelbore",
+    "description": "Industrial Void Navy theme. High contrast, WCAG compliant.",
+    "theme": {
+        "colors": {
+            "frame": "#050530",
+            "frame_inactive": "#050530",
+            "tab_background_text": "#6272A4",
+            "tab_text": "#D98E32",
+            "tab_line": "#4B7EB0",
+            "tab_loading": "#50FA7B",
+            "toolbar": "#000027",
+            "toolbar_text": "#D98E32",
+            "toolbar_field": "#050530",
+            "toolbar_field_text": "#E6E6F0",
+            "toolbar_field_border": "#4B7EB0",
+            "toolbar_field_focus": "#000027",
+            "popup": "#000027",
+            "popup_text": "#D98E32",
+            "popup_border": "#4B7EB0",
+            "ntp_background": "#000027",
+            "ntp_text": "#D98E32",
+            "sidebar": "#050530",
+            "sidebar_text": "#D98E32",
+            "sidebar_highlight": "#4B7EB0",
+            "sidebar_highlight_text": "#000027"
+        }
+    }
+}

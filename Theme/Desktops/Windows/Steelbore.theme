@@ -1,0 +1,49 @@
+; Copyright © Microsoft Corp.
+
+[Theme]
+; Windows 10/11 Theme
+DisplayName=Steelbore
+
+[Control Panel\Colors]
+; Classic Win32 Color Mapping
+; Background = Void Navy
+Background=0 0 39
+; Window Workspace = Deep Plate
+Window=5 5 48
+; Window Text = Chrome White
+WindowText=230 230 240
+; Active Title Bar = Steel Blue
+ActiveTitle=75 126 176
+; Inactive Title Bar = Deep Plate
+InactiveTitle=5 5 48
+; Title Text = Void Navy (High Contrast on Blue)
+TitleText=0 0 39
+; Inactive Title Text = Slag Grey
+InactiveTitleText=98 114 164
+; Selected Item Background = Molten Amber
+Hilight=217 142 50
+; Selected Item Text = Void Navy
+HilightText=0 0 39
+; Buttons = Deep Plate
+ButtonFace=5 5 48
+ButtonText=230 230 240
+; Borders / Shadows
+ButtonShadow=0 0 39
+ButtonHilight=75 126 176
+; Scrollbars
+Scrollbar=0 0 39
+; Menu Background
+Menu=5 5 48
+MenuText=230 230 240
+
+[Control Panel\Desktop]
+; No Wallpaper (Solid Void Navy)
+Wallpaper=
+TileWallpaper=0
+WallpaperStyle=10
+Pattern=
+
+[VisualStyles]
+Path=%ResourceDir%\Themes\Aero\Aero.msstyles
+ColorStyle=NormalColor
+SizeStyle=NormalSize

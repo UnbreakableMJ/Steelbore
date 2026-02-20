@@ -1,0 +1,25 @@
+/* MATE Panel Specifics */
+.mate-panel-menu-bar,
+.mate-panel-applet-slider,
+.mate-panel-applet {
+    background-color: #000027;
+    /* Void Navy */
+    color: #D98E32;
+    /* Molten Amber */
+    font-weight: bold;
+}
+
+/* Active Window List Item in Panel */
+.mate-panel-applet button:checked {
+    background-color: #050530;
+    box-shadow: inset 0 -2px 0 #4B7EB0;
+    /* Steel Blue Underline */
+    color: #E6E6F0;
+}
+
+/* Clock and Status Icons */
+#ClockApplet-button,
+#NaTrayApplet-button {
+    color: #50FA7B;
+    /* Radium Green */
+}

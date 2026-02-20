@@ -1,0 +1,87 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Steelbore Edge",
+    "description": "Industrial Void Navy theme optimized for Vertical Tabs.",
+    "theme": {
+        "colors": {
+            "frame": [
+                5,
+                5,
+                48
+            ],
+            "frame_inactive": [
+                5,
+                5,
+                48
+            ],
+            "toolbar": [
+                0,
+                0,
+                39
+            ],
+            "tab_text": [
+                217,
+                142,
+                50
+            ],
+            "tab_background_text": [
+                98,
+                114,
+                164
+            ],
+            "bookmark_text": [
+                217,
+                142,
+                50
+            ],
+            "ntp_background": [
+                0,
+                0,
+                39
+            ],
+            "ntp_text": [
+                217,
+                142,
+                50
+            ],
+            "button_background": [
+                0,
+                0,
+                39
+            ],
+            "omnibox_background": [
+                5,
+                5,
+                48
+            ],
+            "omnibox_text": [
+                230,
+                230,
+                240
+            ]
+        },
+        "tints": {
+            "buttons": [
+                0.6,
+                0.5,
+                0.5
+            ],
+            "frame": [
+                0.65,
+                0.0,
+                0.15
+            ],
+            "frame_inactive": [
+                0.65,
+                0.0,
+                0.15
+            ],
+            "background_tab": [
+                0.65,
+                0.0,
+                0.15
+            ]
+        }
+    }
+}

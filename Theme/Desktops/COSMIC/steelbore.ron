@@ -1,0 +1,32 @@
+(
+    name: "Steelbore",
+    is_dark: true,
+    accent: "#4B7EB0",  // Steel Blue
+
+    // Backgrounds
+    bg_color: "#000027", // Void Navy
+    container_bg_color: "#050530", // Deep Plate (Panels/Dock)
+
+    // Text
+    text_color: "#D98E32", // Molten Amber
+    accent_text_color: "#000027", // Void Navy (Text on Accent)
+
+    // UI Elements
+    button_bg_color: "#050530",
+    button_fg_color: "#D98E32",
+    
+    // States
+    success_color: "#50FA7B", // Radium Green
+    warning_color: "#D98E32", // Molten Amber
+    destructive_color: "#FF5C5C", // Red Oxide
+    
+    // Advanced Component Overrides
+    components: {
+        "panel": (
+            bg_color: Some("#000027"), // Void Navy Panel
+        ),
+        "dock": (
+            bg_color: Some("#050530"), // Deep Plate Dock
+        ),
+    }
+)
