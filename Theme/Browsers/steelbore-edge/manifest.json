@@ -1,87 +1,102 @@
 {
     "manifest_version": 3,
     "version": "1.0",
-    "name": "Steelbore Edge",
-    "description": "Industrial Void Navy theme optimized for Vertical Tabs.",
+    "name": "Steelbore (Edge)",
+    "description": "The Steelbore Standard visual identity for Microsoft Edge. Charcoal Navy base with Vibrant Orange highlights.",
+    "icons": {
+        "128": "icon.png"
+    },
     "theme": {
         "colors": {
             "frame": [
-                5,
-                5,
-                48
+                14,
+                20,
+                29
             ],
             "frame_inactive": [
+                14,
+                20,
+                29
+            ],
+            "frame_incognito": [
                 5,
                 5,
-                48
+                5
+            ],
+            "frame_incognito_inactive": [
+                5,
+                5,
+                5
             ],
             "toolbar": [
-                0,
-                0,
-                39
+                20,
+                46,
+                70
             ],
             "tab_text": [
-                217,
-                142,
-                50
+                240,
+                240,
+                240
             ],
             "tab_background_text": [
-                98,
-                114,
-                164
+                140,
+                140,
+                140
             ],
             "bookmark_text": [
-                217,
-                142,
-                50
+                254,
+                107,
+                0
             ],
             "ntp_background": [
-                0,
-                0,
-                39
+                14,
+                20,
+                29
             ],
             "ntp_text": [
-                217,
-                142,
-                50
+                254,
+                107,
+                0
+            ],
+            "ntp_link": [
+                254,
+                107,
+                0
+            ],
+            "ntp_section": [
+                20,
+                46,
+                70
             ],
             "button_background": [
-                0,
-                0,
-                39
+                14,
+                20,
+                29
             ],
             "omnibox_background": [
-                5,
-                5,
-                48
+                14,
+                20,
+                29
             ],
             "omnibox_text": [
-                230,
-                230,
-                240
+                254,
+                107,
+                0
             ]
         },
         "tints": {
             "buttons": [
-                0.6,
-                0.5,
+                0.08,
+                1.0,
                 0.5
-            ],
-            "frame": [
-                0.65,
-                0.0,
-                0.15
-            ],
-            "frame_inactive": [
-                0.65,
-                0.0,
-                0.15
-            ],
-            "background_tab": [
-                0.65,
-                0.0,
-                0.15
             ]
+        },
+        "images": {
+            "theme_ntp_background": "background.png"
+        },
+        "properties": {
+            "ntp_background_alignment": "center",
+            "ntp_background_repeat": "no-repeat"
         }
     }
 }

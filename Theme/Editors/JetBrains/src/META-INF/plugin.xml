@@ -1,0 +1,16 @@
+<idea-plugin>
+  <id>com.steelbore.theme</id>
+  <name>Steelbore Theme</name>
+  <vendor email="support@steelbore.com" url="https://github.com/Steelbore">Steelbore</vendor>
+
+  <description><![CDATA[
+    The Steelbore Standard visual identity for JetBrains IDEs (IntelliJ IDEA, RustRover, GoLand).<br>
+    Hardened, high-performance aesthetic using Charcoal Navy, Midnight Blue, and Vibrant Orange.
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="com.steelbore.theme" path="steelbore.theme.json"/>
+  </extensions>
+</idea-plugin>

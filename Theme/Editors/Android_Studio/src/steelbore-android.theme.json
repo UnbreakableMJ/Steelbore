@@ -1,0 +1,34 @@
+{
+    "name": "Steelbore Android",
+    "author": "Steelbore",
+    "dark": true,
+    "editorScheme": "/steelbore-android.xml",
+    "colors": {
+        "DefaultTabs.background": "#0E141D",
+        "DefaultTabs.underlineColor": "#FE6B00",
+        "DefaultTabs.inactiveUnderlineColor": "#142E46",
+        "Editor.background": "#0E141D",
+        "Editor.foreground": "#F0F0F0",
+        "EditorTabs.background": "#0E141D",
+        "EditorTabs.underlineColor": "#FE6B00",
+        "EditorTabs.inactiveUnderlineColor": "#142E46",
+        "ToolWindow.Header.background": "#142E46",
+        "ToolWindow.Header.inactiveBackground": "#0E141D",
+        "SidePanel.background": "#142E46",
+        "NavBar.background": "#0E141D"
+    },
+    "ui": {
+        "Button.focusedBorderColor": "#FE6B00",
+        "Button.startBackground": "#142E46",
+        "Button.endBackground": "#142E46",
+        "Button.foreground": "#F0F0F0",
+        "Label.foreground": "#F0F0F0",
+        "Link.activeForeground": "#FE6B00",
+        "Link.hoverForeground": "#FE6B00",
+        "Link.visitedForeground": "#FE6B00",
+        "Panel.background": "#0E141D",
+        "Tree.background": "#142E46",
+        "Tree.selectionBackground": "#FE6B00",
+        "Tree.selectionForeground": "#0E141D"
+    }
+}
