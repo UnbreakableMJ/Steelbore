@@ -1,0 +1,35 @@
+<Themes>
+  <Theme Name="Steelbore" GUID="{8564f027-142e-4634-87b1-4a55655a1234}" Director="Dark">
+    <Category GUID="{75a05685-286d-11d0-8354-00a0c9031596}"> <!-- General Environment -->
+      <Color Name="ActiveBorder">
+        <Background Type="CT_RAW" Source="#FF4B7EB0" />
+      </Color>
+      <Color Name="ActiveTabBackground">
+        <Background Type="CT_RAW" Source="#FF000027" />
+      </Color>
+      <Color Name="ActiveTabBorder">
+        <Background Type="CT_RAW" Source="#FFFF5C5C" />
+      </Color>
+      <Color Name="ActiveTabText">
+        <Background Type="CT_RAW" Source="#FFD98E32" />
+      </Color>
+      <Color Name="Background">
+        <Background Type="CT_RAW" Source="#FF000027" />
+      </Color>
+    </Category>
+    <Category GUID="{2370b77c-463d-4225-ae9a-9b9083236312}"> <!-- Text Editor -->
+      <Color Name="Background">
+        <Background Type="CT_RAW" Source="#FF000027" />
+      </Color>
+      <Color Name="Foreground">
+        <Background Type="CT_RAW" Source="#FFD98E32" />
+      </Color>
+      <Color Name="LineNumbers">
+        <Foreground Type="CT_RAW" Source="#FF6272A4" />
+      </Color>
+      <Color Name="SelectedText">
+        <Background Type="CT_RAW" Source="#404B7EB0" />
+      </Color>
+    </Category>
+  </Theme>
+</Themes>

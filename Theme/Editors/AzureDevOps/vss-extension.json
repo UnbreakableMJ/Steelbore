@@ -1,0 +1,41 @@
+{
+    "manifestVersion": 1,
+    "id": "steelbore-theme",
+    "version": "1.0.0",
+    "name": "Steelbore Theme",
+    "description": "Industrial dark theme for Azure DevOps boards and pipelines.",
+    "publisher": "SteelBore",
+    "categories": [
+        "Azure Pipelines",
+        "Azure Boards"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "steelbore-dark-theme",
+            "type": "ms.vss-web.theme",
+            "description": "Steelbore Dark Theme",
+            "targets": [
+                "ms.vss-web.theme-collection"
+            ],
+            "properties": {
+                "name": "Steelbore",
+                "uiTheme": "dark",
+                "variables": {
+                    "background-color": "#000027",
+                    "primary-text-color": "#D98E32",
+                    "secondary-text-color": "#6272A4",
+                    "primary-button-background": "#4B7EB0",
+                    "primary-button-text": "#000027",
+                    "accent-color": "#FE6B00",
+                    "error-color": "#FF5C5C"
+                }
+            }
+        }
+    ],
+    "files": []
+}

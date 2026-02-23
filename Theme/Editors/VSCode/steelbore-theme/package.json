@@ -3,7 +3,17 @@
     "displayName": "Steelbore Theme",
     "description": "A high-contrast, industrial dark theme using WCAG-compliant Void Navy and Molten Amber.",
     "version": "1.0.0",
-    "publisher": "YourName",
+    "publisher": "SteelBore",
+    "author": "Mohamed Hammad",
+    "license": "GPL-3.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/UnbreakableMJ/Steelbore"
+    },
+    "bugs": {
+        "url": "https://github.com/UnbreakableMJ/Steelbore/issues"
+    },
+    "homepage": "https://github.com/UnbreakableMJ/Steelbore",
     "engines": {
         "vscode": "^1.60.0"
     },
