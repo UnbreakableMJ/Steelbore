@@ -3,7 +3,7 @@
 
 [![License: GPL 3+](https://img.shields.io/badge/License-GPL%203%2b-FE6B00.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-**Steelbore** is a hardened, high-performance computing environment that abstracts the operating system. By viewing Linux, BSD, Microkernels, and the Redox kernel as variable runtimes, Steelbore provides a unified, memory-safe userland built mainly & mostly on the **Rust** programming language.
+**Steelbore** is a hardened, high-performance computing environment that abstracts the operating system. By viewing Linux, BSD, microkernels, and the Redox kernel as variable runtimes, Steelbore provides a unified, memory-safe userland built primarily on the **Rust** programming language.
 
 ---
 
@@ -23,18 +23,18 @@ Steelbore operates as a **Distroless Ecosystem**. Regardless of the architecture
 
 ## 🛡️ The S3cure Protocol
 
-* **DNS Filtering:** Every edition offer a choice for DNS Malware protection and more with **S3cure.us DNS**, Cloudflare, and AdGuard.
-* **Memory Safety:** Legacy C-based tools are replaced by a Rust-native stack (`nu`, `brush`, `eza`, `rg`, `bat`, `fd`, `dust`, `btm`).
-* **Architecture Agnostic:** The Steelbore userland is designed to bridge the gap between legacy monolithic kernels and modern microkernel theory.
+- **DNS Filtering**: Choice of malware protection via **S3cure.us DNS**, Cloudflare, or AdGuard.
+- **Memory Safety**: Legacy C-based tools are replaced by a Rust-native stack (`nu`, `brush`, `eza`, `rg`, `bat`, `fd`, `dust`, `btm`).
+- **Architecture Agnostic**: Designed to bridge the gap between legacy monolithic kernels and modern microkernel theory.
 
 ---
 
 ## 🎨 Visual Identity
 Inspired by the cold blue future of  machine intelligence (**The Matrix / Terminator**), the Steelbore aesthetic is strictly enforced across all editions.
 
-* **Palette:** Charcoal Navy (`#0E141D`), Midnight Blue (`#142E46`), Vibrant Orange (`#FE6B00`).
-* **Typography:** **x** for branding; **JetBrainsMono Nerd Font** for the TUI.
-* **Editor Sync:** Standardized **Vim-mode** across *Helix, msedit, Zed, Lapce, Antigravity, VSCode OSS, and emacs-ng.*
+- **Palette**: Charcoal Navy (`#0E141D`), Midnight Blue (`#142E46`), Vibrant Orange (`#FE6B00`).
+- **Typography**: `x` for branding; `JetBrainsMono Nerd Font` for the TUI.
+- **Editor Sync**: Standardized **Vim-mode** across *Helix, msedit, Zed, Lapce, Antigravity, VSCode OSS, and emacs-ng.*
 
 ---
 *Cutting through complexity to reach a core of pure, memory-safe stability.*

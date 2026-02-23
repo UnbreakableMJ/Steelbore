@@ -1,0 +1,25 @@
+name: Steelbore
+accent: '#4B7EB0'
+cursor: '#D98E32'
+background: '#000027'
+foreground: '#D98E32'
+details: darker
+terminal_colors:
+  bright:
+    black: '#6272A4'
+    blue: '#D6ACFF'
+    cyan: '#A4FFFF'
+    green: '#69FF94'
+    magenta: '#FF92DF'
+    red: '#FF6E6E'
+    white: '#FFFFFF'
+    yellow: '#FFFFA5'
+  normal:
+    black: '#000027'
+    blue: '#4B7EB0'
+    cyan: '#8BE9FD'
+    green: '#50FA7B'
+    magenta: '#BD93F9'
+    red: '#FF5C5C'
+    white: '#E6E6F0'
+    yellow: '#D98E32'
