@@ -1,0 +1,20 @@
+layout {
+    gaps 5
+    
+    // Disable Niri's default focus ring to match LeftWM's flat borders
+    focus-ring {
+        off
+    }
+
+    // Enable standard borders
+    border {
+        width 2
+        active-color "#D98E32" // moltenAmber
+        inactive-color "#4B7EB0" // steelBlue
+    }
+
+    // Optional: Use the redOxide color to highlight floating windows or errors
+    struts {
+        left 0; right 0; top 0; bottom 0
+    }
+}
