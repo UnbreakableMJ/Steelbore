@@ -1,0 +1,33 @@
+{
+    "name": "steelbore-antigravity",
+    "displayName": "Steelbore Theme (Antigravity)",
+    "description": "A high-contrast, industrial dark theme for Google Antigravity.",
+    "version": "1.0.0",
+    "publisher": "SteelBore",
+    "author": "Mohamed Hammd",
+    "license": "GPL3+",
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/UnbreakableMJ/Steelbore"
+    },
+    "bugs": {
+        "url": "https://github.com/UnbreakableMJ/Steelbore/issues"
+    },
+    "homepage": "https://github.com/UnbreakableMJ/Steelbore",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Steelbore",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Steelbore-color-theme.json"
+            }
+        ]
+    }
+}

@@ -1,7 +1,8 @@
 <idea-plugin>
   <id>com.steelbore.theme</id>
   <name>Steelbore Theme</name>
-  <vendor email="support@steelbore.com" url="https://github.com/Steelbore">Steelbore</vendor>
+  <version>1.0</version>
+  <vendor email="support@steelbore.com" url="https://steelbore.com">Mohamed Hammd</vendor>
 
   <description><![CDATA[
     The Steelbore Standard visual identity for JetBrains IDEs (IntelliJ IDEA, RustRover, GoLand).<br>

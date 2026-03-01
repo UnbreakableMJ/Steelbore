@@ -4,7 +4,15 @@
     "version": "1.0.0",
     "name": "Steelbore Theme",
     "description": "Industrial dark theme for Azure DevOps boards and pipelines.",
-    "publisher": "SteelBore",
+    "publisher": "Mohamed Hammd",
+    "icons": {
+        "default": "icon.png"
+    },
+    "links": {
+        "home": {
+            "uri": "https://steelbore.com"
+        }
+    },
     "categories": [
         "Azure Pipelines",
         "Azure Boards"
@@ -37,5 +45,10 @@
             }
         }
     ],
-    "files": []
+    "files": [
+        {
+            "path": "icon.png",
+            "addressable": true
+        }
+    ]
 }

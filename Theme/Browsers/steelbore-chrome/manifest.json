@@ -3,6 +3,9 @@
     "version": "1.0",
     "name": "Steelbore",
     "description": "The Steelbore Standard visual identity for Chromium. Charcoal Navy base with Vibrant Orange highlights.",
+    "author": "Mohamed Hammd",
+    "license": "GPL3+",
+    "homepage_url": "https://steelbore.com",
     "icons": {
         "128": "icon.png"
     },

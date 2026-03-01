@@ -1,0 +1,27 @@
+# Version: 1.0
+# Author: Mohamed Hammd
+# License: GPL3+
+# URL: https://steelbore.com
+
+# Steelbore MangoWC Theme
+
+[Theme]
+name = "Steelbore"
+
+[Colors]
+bg_color = "#000027"
+fg_color = "#D98E32"
+
+active_border = "#4B7EB0"
+inactive_border = "#050530"
+
+button_bg = "#050530"
+button_fg = "#2ecc71"
+
+[Window]
+border_width = 2
+border_radius = 4
+
+[Gaps]
+inner = 5
+outer = 10

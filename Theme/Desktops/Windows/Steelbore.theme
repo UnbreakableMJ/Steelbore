@@ -1,3 +1,7 @@
+; Version: 1.0
+; Author: Mohamed Hammd
+; License: GPL3+
+; URL: https://steelbore.com
 ; Copyright © Microsoft Corp.
 
 [Theme]
@@ -38,7 +42,7 @@ MenuText=230 230 240
 
 [Control Panel\Desktop]
 ; No Wallpaper (Solid Void Navy)
-Wallpaper=
+Wallpaper=background.png
 TileWallpaper=0
 WallpaperStyle=10
 Pattern=

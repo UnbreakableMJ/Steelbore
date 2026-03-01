@@ -2,9 +2,9 @@
 <metacity_theme>
 <info>
   <name>Steelbore</name>
-  <author>Steelbore System</author>
-  <copyright>No Warranty</copyright>
-  <description>Industrial Void Navy Theme</description>
+  <author>Mohamed Hammd</author>
+  <copyright>Mohamed Hammd (GPL3+)</copyright>
+  <description>Industrial Void Navy Theme. Version: 1.0. URL: https://steelbore.com</description>
 </info>
 
 <frame_geometry name="normal" has_title="true" title_scale="medium" parent="normal_base">
