@@ -1,0 +1,11 @@
+# ... (previous Justfile variables) ...
+bridge_script := "~/.config/waytrogen/wallpaper-bridge.sh"
+
+start-wallpaper:
+    # Waytrogen manages the state, we tell it to restore using our bridge
+    waytrogen --external_script {{bridge_script}} --restore
+
+# Let's add a command to open the Waytrogen GUI with the script attached
+wall-picker:
+    # Opens the GUI. When you click an image, it triggers wallpaper-bridge.sh
+    waytrogen --external_script {{bridge_script}} &

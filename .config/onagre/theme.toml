@@ -1,0 +1,42 @@
+# Steelbore Theme for Onagre
+
+[window]
+background = "#000027" # voidNavy
+border_color = "#4B7EB0" # steelBlue
+border_radius = 0
+border_width = 2
+padding = 10
+width = 600
+height = 400
+
+[search]
+background = "#000027"
+border_color = "#D98E32" # moltenAmber (Active readout)
+border_radius = 0
+border_width = 2
+padding = 10
+text_color = "#D98E32" # moltenAmber
+placeholder_color = "#4B7EB0" # steelBlue
+
+[search.font]
+font_family = "Fira Code"
+font_size = 18
+
+[list]
+background = "#000027"
+padding = 5
+spacing = 5
+
+[list.item.default]
+background = "#000027"
+text_color = "#4B7EB0" # steelBlue (Inactive list items)
+
+[list.item.selected]
+background = "#D98E32" # moltenAmber (Highlight)
+text_color = "#000027" # voidNavy (High contrast against amber)
+border_radius = 0
+
+[scroll]
+background = "#000027"
+thumb_color = "#4B7EB0"
+width = 8

@@ -1,0 +1,14 @@
+;; LeftWM Listener (X11)
+(deflisten leftwm-tags "leftwm-state -w 0 -t ~/.config/eww/leftwm-tags.liquid")
+
+;; Niri Listener (Wayland)
+(deflisten niri-tags "~/.config/eww/niri-workspaces.sh")
+
+;; The conditional widget
+(defwidget workspaces [wm_type]
+  (box
+    (visible {wm_type == "wayland"}
+      (literal :content niri-tags))
+      
+    (visible {wm_type == "x11"}
+      (literal :content leftwm-tags))))

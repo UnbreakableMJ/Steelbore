@@ -1,0 +1,37 @@
+/* Steelbore Palette */
+$voidNavy: #000027;
+$moltenAmber: #D98E32;
+$steelBlue: #4B7EB0;
+$radiumGreen: #50FA7B;
+$redOxide: #FF5C5C;
+$liquidCool: #8BE9FD;
+
+* { all: unset; font-family: "Fira Code", monospace; }
+
+.bar {
+    background-color: $voidNavy;
+    border-bottom: 2px solid $steelBlue; /* Industrial structural accent */
+    color: $moltenAmber;
+}
+
+.ws-button {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: $steelBlue; /* Inactive text */
+}
+
+.ws-button.focused {
+    background-color: $moltenAmber; 
+    color: $voidNavy; /* High contrast active state */
+}
+
+.ws-button.visible {
+    color: $liquidCool; 
+}
+
+.ws-button.busy {
+    color: $moltenAmber;
+}
+
+.cpu { color: $redOxide; font-weight: bold; }
+.ram { color: $radiumGreen; font-weight: bold; }
