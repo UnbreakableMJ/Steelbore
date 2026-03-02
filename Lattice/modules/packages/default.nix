@@ -10,8 +10,6 @@
     # Core essentials not included in categories
     git
     vim
-    wget
-    curl
 
     # SerenityOS Automation
     (writeShellScriptBin "serenity-dev" ''

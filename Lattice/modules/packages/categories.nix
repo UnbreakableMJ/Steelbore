@@ -2,138 +2,276 @@
 
 {
   environment.systemPackages = [
-    # 1. Login Managers
-    pkgs.greetd.greetd # [Daemon]
-    pkgs.greetd.tuigreet #🦀 [TUI]
-    pkgs.lemurs #🦀 [TUI]
+    # ══════════════════════════════════════════════════════════════════
+    # 1. Boot & Login
+    # ══════════════════════════════════════════════════════════════════
+    # Bootloader: Lanzaboote → imported as flake module in flake.nix
+    pkgs.sbctl                         #🦀 [CLI] Secure Boot Manager
 
-    # 2. Desktop Environments & Window Managers
-    pkgs.dms-shell #🐹 [GUI]
+    # Login Managers
+    pkgs.greetd.greetd                 #🦀 [Daemon]
+    pkgs.greetd.tuigreet               #🦀 [TUI] Best for Niri/LeftWM
+    pkgs.lemurs                        #🦀 [TUI]
+    # cosmic-greeter                   # → cosmic.nix (service toggle)
 
-    # Input
-    pkgs.xremap #🦀 [CLI]
+    # System Components
+    # xdg-desktop-portal-cosmic        # → cosmic.nix
+    # sudo-rs                          # → settings.nix (security.sudo-rs)
 
-    # 3. Terminal & Shell Environment
-    pkgs.nushell #🦀 [CLI]
-    pkgs.zellij #🦀 [TUI]
-    pkgs.atuin #🦀 [CLI]
-    pkgs.starship #🦀 [CLI]
-    pkgs.brush #🦀 [CLI]
-    pkgs.ion #🦀 [CLI]
-    pkgs.alacritty #🦀 [GUI]
-    pkgs.wezterm #🦀 [GUI]
-    pkgs.rio #🦀 [GUI]
+    # ══════════════════════════════════════════════════════════════════
+    # 2. Desktop & Window Management
+    # ══════════════════════════════════════════════════════════════════
+    # Window Managers & Sessions
+    # niri                             # → niri.nix
+    # leftwm                           # → leftwm.nix
+    # COSMIC DE                        # → cosmic.nix
+    # cosmic-session                   # → cosmic.nix
 
-    # 4. Text Editing
-    pkgs.helix #🦀 [TUI]
-    pkgs.amp #🦀 [TUI]
-    pkgs.msedit #🦀 [TUI]
-    pkgs.zed-editor #🦀 [GUI]
-    pkgs.lapce #🦀 [GUI]
-    pkgs.tau #🦀 [GUI]
-    pkgs.neovide #🦀 [GUI]
-    emacs-ng.packages.${pkgs.system}.default #⚠️ [GUI]
-    pkgs.code-oss #⚠️ [GUI]
-    
+    # Desktop Suites
+    pkgs.dms-shell                     #🐹 [GUI] DankMaterialShell (Go/Qt)
+
+    # Launchers
+    # anyrun                           # → niri.nix
+    # rlaunch                          # → leftwm.nix
+    pkgs.onagre                        #🦀 [GUI]
+
+    # Input Tools
+    pkgs.xremap                        #🦀 [CLI] Dynamic key remapper
+
+    # ══════════════════════════════════════════════════════════════════
+    # 3. System Monitoring & Panels
+    # ══════════════════════════════════════════════════════════════════
+    # Bars & Widgets
+    pkgs.ironbar                       #🦀 [GUI] The "Steelbore" Bar
+    pkgs.eww                           #🦀 [GUI] Custom Widgets
+
+    # Notifications
+    pkgs.wired                         #🦀 [Daemon] Notification daemon
+
+    # Hardware & Kernel
+    pkgs.kmon                          #🦀 [TUI] Kernel manager
+    pkgs.bottom                        #🦀 [TUI] Process monitor
+    pkgs.bandwhich                     #🦀 [TUI] Bandwidth usage
+    pkgs.mission-center                #🦀 [GUI] Task Manager
+    pkgs.macchina                      #🦀 [CLI] System fetch
+
+    # ══════════════════════════════════════════════════════════════════
+    # 4. Package & System Management
+    # ══════════════════════════════════════════════════════════════════
+    # The Rust Stack
+    # pkgs.omni                        # NOT IN NIXPKGS — Universal Package Manager
+    # pkgs.zap                         # NOT IN NIXPKGS — AppImage/System Tool
+    pkgs.topgrade                      #🦀 [CLI] Updates everything at once
+    pkgs.paru                          #🦀 [CLI] Fast AUR Helper
+    pkgs.cargo-update                  #🦀 [CLI] Updates Cargo binaries
+    # pkgs.linutil                     # NOT IN NIXPKGS — Distro maintenance tool
+
+    # Dotfile Management
+    pkgs.dotter                        #🦀 [CLI] Dotfile manager and templater
+
+    # The Standard Stack
+    pkgs.guix                          #(λ) [CLI] Guile Scheme
+    # pkgs.am                          # NOT IN NIXPKGS — AppImage Manager (Bash)
+    # pkgs.brew                        # NOT IN NIXPKGS — Homebrew (not a NixOS package)
+    pkgs.flatpak                       #⚠️  [CLI] (C)
+    pkgs.nix                           #⚠️  [CLI] (C++)
+
+    # ══════════════════════════════════════════════════════════════════
     # 5. File & Disk Management
-    pkgs.yazi #🦀 [TUI]
-    pkgs.broot #🦀 [TUI]
-    unstable.superfile #🐹 [TUI]
-    unstable.spacedrive #🦀 [GUI]
-    pkgs.gptman #🦀 [CLI]
-    unstable.disktui #🦀 [TUI]
-    pkgs.dua #🦀 [TUI]
-    pkgs.dust #🦀 [CLI]
-    pkgs.fclones #🦀 [CLI]
-    pkgs.kondo #🦀 [CLI]
+    # ══════════════════════════════════════════════════════════════════
+    # File Managers
+    pkgs.yazi                          #🦀 [TUI]
+    pkgs.broot                         #🦀 [TUI]
+    unstable.superfile                 #🐹 [TUI] (Go)
+    # cosmic-files                     # → cosmic.nix
+    unstable.spacedrive                #🦀 [GUI]
 
-    # 6. Multimedia & Processing
-    pkgs.mpv #⚠️ [CLI/GUI]
-    pkgs.yt-dlp #🐍 [CLI]
-    pkgs.ncspot #🦀 [TUI]
-    pkgs.termusic #🦀 [TUI]
-    pkgs.viu #🦀 [CLI]
-    pkgs.vlc #⚠️ [GUI]
-    pkgs.loupe #🦀 [GUI]
-    pkgs.psst #🦀 [GUI]
-    pkgs.amberol #🦀 [GUI]
-    pkgs.shortwave #🦀 [GUI]
-    pkgs.mousai #🦀 [GUI]
-    pkgs.gyroflow #🦀 [GUI]
-    pkgs.ffmpeg #⚠️ [CLI]
-    pkgs.rav1e #🦀 [CLI]
-    pkgs.gifski #🦀 [CLI]
-    pkgs.oxipng #🦀 [CLI]
-    pkgs.video-trimmer #🦀 [GUI]
+    # Disk Usage & Cleaning
+    pkgs.dust                          #🦀 [CLI] Disk usage analyzer
+    pkgs.dua                           #🦀 [TUI] Interactive disk usage
+    pkgs.fclones                       #🦀 [CLI] Duplicate finder
+    pkgs.kondo                         #🦀 [CLI] Project cleaner
 
-    # 7. Core Utilities (The "Modern Unix" Stack)
-    pkgs.fd #🦀 [CLI]
-    pkgs.ripgrep #🦀 [CLI]
-    pkgs.bat #🦀 [CLI]
-    pkgs.eza #🦀 [CLI]
-    pkgs.sd #🦀 [CLI]
-    pkgs.ouch #🦀 [CLI]
-    pkgs.zoxide #🦀 [CLI]
-    pkgs.uutils-coreutils #🦀 [CLI]
-    pkgs.procs #🦀 [CLI]
-    pkgs.tokei #🦀 [CLI]
-    
-    # 8. Package & System Management
-    pkgs.topgrade #🦀 [CLI]
-    pkgs.paru #🦀 [CLI]
-    pkgs.cargo-update #🦀 [CLI]
-    pkgs.flatpak #⚠️ [CLI]
-    pkgs.guix #⚠️ [CLI]
-    pkgs.nix #⚠️ [CLI]
-    pkgs.kmon #🦀 [TUI]
-    
-    # 9. System Monitoring & Panels
-    pkgs.ironbar #🦀 [GUI]
-    pkgs.eww #🦀 [GUI]
-    pkgs.bottom #🦀 [TUI]
-    pkgs.bandwhich #🦀 [TUI]
-    pkgs.macchina #🦀 [CLI]
-    pkgs.mission-center #🦀 [GUI]
-    unstable.sniffnet #🦀 [GUI]
-    pkgs.sbctl #🦀 [CLI]
+    # Partitioning
+    unstable.disktui                   #🦀 [TUI] Interactive Partition Manager
+    pkgs.gptman                        #🦀 [CLI] Scriptable GPT Manager
 
-    # 10. Communication
-    pkgs.iamb #🦀 [TUI]
-    rivetui.packages.${pkgs.system}.default #🦀 [TUI]
-    pkgs.fractal #🦀 [GUI]
-    pkgs.newsflash #🦀 [GUI]
+    # ══════════════════════════════════════════════════════════════════
+    # 6. Core Utilities (The "Modern Unix" Stack)
+    # ══════════════════════════════════════════════════════════════════
+    # File Operations
+    pkgs.fd                            #🦀 [CLI] User-friendly find
+    pkgs.ripgrep                       #🦀 [CLI] Fast grep
+    pkgs.bat                           #🦀 [CLI] cat with syntax highlighting
+    pkgs.eza                           #🦀 [CLI] Modern ls
+    pkgs.sd                            #🦀 [CLI] Intuitive sed
+    pkgs.ouch                          #🦀 [CLI] Painless compression
+    pkgs.zoxide                        #🦀 [CLI] Smarter cd
 
-    # 11. Security & Encryption
-    pkgs.age #🦀 [CLI]
-    pkgs.rage #🦀 [CLI]
-    pkgs.sequoia #🦀 [CLI]
-    pkgs.rbw #🦀 [CLI]
-    goldwarden.packages.${pkgs.system}.default #🦀 [GUI]
-    pkgs.authenticator #🦀 [GUI]
-    unstable.pika-backup #🦀 [GUI]
+    # Text Processing
+    pkgs.jaq                           #🦀 [CLI] JSON processor (jq clone)
+    pkgs.uutils-coreutils              #🦀 [CLI] Coreutils reimplementation
+    pkgs.procs                         #🦀 [CLI] Modern ps
+    pkgs.tokei                         #🦀 [CLI] Code statistics tool
 
-    # 12. Networking & Internet
-    pkgs.xh #🦀 [CLI]
-    pkgs.monolith #🦀 [CLI]
-    pkgs.lychee #🦀 [CLI]
-    pkgs.rustscan #🦀 [CLI]
-    pkgs.sniffglue #🦀 [CLI]
-    pkgs.mullvad-vpn #🦀 [GUI]
-    pkgs.trippy #🦀 [TUI]
-    pkgs.wget2 #⚠️ [CLI]
-    pkgs.curl #⚠️ [CLI]
-    unstable.rqbit #🦀 [GUI]
+    # ══════════════════════════════════════════════════════════════════
+    # 7. Development & Git
+    # ══════════════════════════════════════════════════════════════════
+    # Git & Ops
+    pkgs.gitui                         #🦀 [TUI] Blazing fast Git UI
+    pkgs.delta                         #🦀 [CLI] Syntax-highlighting pager
+    pkgs.jujutsu                       #🦀 [CLI] Git-compatible DVCS (jj)
+    # pkgs.cpx                         # NOT IN NIXPKGS — Competitive Programming Helper
 
-    # 13. Productivity & AI
-    pkgs.affine #🦀 [GUI]
-    pkgs.aichat #🦀 [CLI]
-    pkgs.gemini-cli #🦀 [CLI]
-    pkgs.claude-code #🦀 [CLI]
+    # Toolchains & Env
+    pkgs.rustup                        #🦀 [CLI] Rust toolchain
+    pkgs.lorri                         #🦀 [CLI] Nix environment manager daemon
+    pkgs.just                          #🦀 [CLI] Command runner
 
-    # 14. Emulation & Compatibility
-    pkgs.dosbox-staging #⚠️ [GUI]
-    pkgs.dosbox-x #⚠️ [GUI]
-    pkgs.ruffle #🦀 [GUI]
-    pkgs.qemu #⚠️ [CLI]
+    # ══════════════════════════════════════════════════════════════════
+    # 8. Security & Encryption
+    # ══════════════════════════════════════════════════════════════════
+    # Tools
+    pkgs.age                           #🦀 [CLI] Modern encryption (age)
+    pkgs.rage                          #🦀 [CLI] Modern encryption (rage)
+    pkgs.sequoia                       #🦀 [CLI] OpenPGP implementation
+    pkgs.sequoia-chameleon-gnupg       #🦀 [CLI] GnuPG drop-in replacement
+    pkgs.rbw                           #🦀 [CLI] Bitwarden Client
+    goldwarden.packages.${pkgs.system}.default #🦀 [GUI] Goldwarden (Bitwarden Desktop)
+    pkgs.authenticator                 #🦀 [GUI] 2FA/OTP Client
+
+    # Backup & App Stores
+    unstable.pika-backup               #🦀 [GUI] Borg Frontend
+    # cosmic-store                     # → cosmic.nix
+
+    # ══════════════════════════════════════════════════════════════════
+    # 9. Networking & Internet
+    # ══════════════════════════════════════════════════════════════════
+    # Network Management
+    pkgs.impala                        #🦀 [TUI] TUI for iwd
+    pkgs.iwd                           #⚠️  [CLI] Modern Wi-Fi daemon (C)
+    pkgs.nmstate                       #🦀 [CLI] Declarative network config
+
+    # Diagnostics & Tools
+    pkgs.xh                            #🦀 [CLI] curl replacement
+    pkgs.monolith                      #🦀 [CLI] wget archiver
+    pkgs.lychee                        #🦀 [CLI] Link checker
+    # pkgs.ssh-rs                      # NOT IN NIXPKGS — Rust SSH2
+    # pkgs.dog                         # NOT IN NIXPKGS — DNS client (dig replacement)
+    pkgs.gping                         #🦀 [CLI] Graphical ping
+    pkgs.rustscan                      #🦀 [CLI]
+    pkgs.sniffglue                     #🦀 [CLI]
+    pkgs.trippy                        #🦀 [TUI]
+
+    # Standard Stack
+    pkgs.wget2                         #⚠️  [CLI] (C)
+    pkgs.curl                          #⚠️  [CLI] (C)
+
+    # GUI Apps
+    unstable.sniffnet                  #🦀 [GUI]
+    pkgs.mullvad-vpn                   #🦀 [GUI]
+    unstable.rqbit                     #🦀 [GUI] BitTorrent
+
+    # ══════════════════════════════════════════════════════════════════
+    # 10. Terminal Environment
+    # ══════════════════════════════════════════════════════════════════
+    # Emulators
+    pkgs.ghostty                       #⚡  [GUI] Zig — High-performance, native
+    pkgs.alacritty                     #🦀 [GUI]
+    pkgs.wezterm                       #🦀 [GUI]
+    pkgs.rio                           #🦀 [GUI]
+    # cosmic-term                      # → cosmic.nix
+
+    # Shells
+    pkgs.nushell                       #🦀 [CLI]
+    pkgs.brush                         #🦀 [CLI] Bash-Compatible
+    pkgs.starship                      #🦀 [CLI]
+    pkgs.atuin                         #🦀 [CLI]
+    pkgs.ion                           #🦀 [CLI]
+
+    # Tools
+    pkgs.zellij                        #🦀 [TUI] Multiplexer
+    pkgs.t-rec                         #🦀 [CLI] Terminal recorder
+
+    # ══════════════════════════════════════════════════════════════════
+    # 11. Communication
+    # ══════════════════════════════════════════════════════════════════
+    # Matrix
+    # pkgs.matrix-commander-rs         # NOT IN NIXPKGS
+    pkgs.iamb                          #🦀 [TUI]
+    # pkgs.rumatui                     # NOT IN NIXPKGS
+    pkgs.fractal                       #🦀 [GUI]
+
+    # Discord
+    # pkgs.disrust                     # NOT IN NIXPKGS
+    rivetui.packages.${pkgs.system}.default #🦀 [TUI] RivetUI
+    # pkgs.lemoncord                   # NOT IN NIXPKGS
+    # pkgs.fastcord                    # NOT IN NIXPKGS
+
+    # Fediverse / Social
+    # pkgs.ebou                        # NOT IN NIXPKGS — Mastodon
+    pkgs.newsflash                     #🦀 [GUI] RSS
+
+    # ══════════════════════════════════════════════════════════════════
+    # 12. Text Editing
+    # ══════════════════════════════════════════════════════════════════
+    # CLI/TUI
+    pkgs.helix                         #🦀 [TUI]
+    # pkgs.rsvim                       # NOT IN NIXPKGS
+    pkgs.amp                           #🦀 [TUI]
+    pkgs.msedit                        #🦀 [TUI]
+
+    # GUI
+    pkgs.zed-editor                    #🦀 [GUI]
+    pkgs.lapce                         #🦀 [GUI]
+    pkgs.tau                           #🦀 [GUI]
+    # cosmic-edit                      # → cosmic.nix
+    pkgs.neovide                       #🦀 [GUI] Neovim Frontend
+    emacs-ng.packages.${pkgs.system}.default #⚠️ [GUI] (C/Lisp/Rust)
+    pkgs.vscodium                      #⚠️  [GUI] Telemetry-free VS Code
+    pkgs.code-oss                      #⚠️  [GUI] (TS)
+
+    # ══════════════════════════════════════════════════════════════════
+    # 13. Multimedia & Processing
+    # ══════════════════════════════════════════════════════════════════
+    # Video/Audio Players
+    pkgs.mpv                           #⚠️  [TUI] (C)
+    pkgs.amberol                       #🦀 [GUI] Local Music
+    pkgs.shortwave                     #🦀 [GUI] Radio
+    pkgs.ncspot                        #🦀 [TUI] Spotify
+    pkgs.psst                          #🦀 [GUI] Spotify
+    pkgs.termusic                      #🦀 [TUI] Local Music
+    # pkgs.radio-browser-rust          # NOT IN NIXPKGS
+    pkgs.loupe                         #🦀 [GUI] Image Viewer
+    pkgs.viu                           #🦀 [CLI] CLI Image Viewer
+    pkgs.mousai                        #🦀 [GUI] Song ID
+
+    # Processing & Encoders
+    pkgs.ffmpeg                        #⚠️  [CLI] (C)
+    pkgs.rav1e                         #🦀 [CLI] AV1 Encoder
+    pkgs.gifski                        #🦀 [CLI] GIF Encoder
+    pkgs.oxipng                        #🦀 [CLI] PNG Optimizer
+    pkgs.gyroflow                      #🦀 [GUI] Stabilization
+    pkgs.video-trimmer                 #🦀 [GUI]
+
+    # Downloaders
+    pkgs.yt-dlp                        #🐍 [CLI]
+    # pkgs.gydl                        # NOT IN NIXPKGS
+
+    # ══════════════════════════════════════════════════════════════════
+    # 14. AI & Productivity
+    # ══════════════════════════════════════════════════════════════════
+    # AI Coding Agents
+    pkgs.opencode                      #🐹 [CLI] Go — Open source coding agent
+    # pkgs.kilo                        # NOT IN NIXPKGS — TypeScript agentic platform
+
+    # CLI AI Assistants
+    pkgs.aichat                        #🦀 [CLI] Universal Chat REPL
+    pkgs.gemini-cli                    #🦀 [CLI]
+    pkgs.claude-code                   #🦀 [CLI]
+
+    # Knowledge & Workflow
+    pkgs.appflowy                      #🦀 [GUI] Open Source Notion
+    pkgs.affine                        #🦀 [GUI] Knowledge Base & Whiteboard
   ];
 }
