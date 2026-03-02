@@ -1,0 +1,56 @@
+{
+    "name": "Steelbore",
+    "description": "The Steelbore Standard visual identity for Opera GX. Charcoal Navy base with Vibrant Orange highlights. Industrial-grade dark theme.",
+    "developer": {
+        "name": "Mohamed Hammd"
+    },
+    "icons": {
+        "512": "icon_512.png"
+    },
+    "manifest_version": 3,
+    "mod": {
+        "license": "license.txt",
+        "payload": {
+            "theme": {
+                "dark": {
+                    "gx_accent": {
+                        "h": 25,
+                        "s": 100,
+                        "l": 50
+                    },
+                    "gx_secondary_base": {
+                        "h": 213,
+                        "s": 36,
+                        "l": 9
+                    }
+                },
+                "light": {
+                    "gx_accent": {
+                        "h": 25,
+                        "s": 100,
+                        "l": 50
+                    },
+                    "gx_secondary_base": {
+                        "h": 211,
+                        "s": 55,
+                        "l": 17
+                    }
+                }
+            },
+            "wallpaper": {
+                "dark": {
+                    "image": "wallpaper/dark.png",
+                    "text_color": "#F0F0F0",
+                    "text_shadow": "#0E141D"
+                },
+                "light": {
+                    "image": "wallpaper/light.png",
+                    "text_color": "#0E141D",
+                    "text_shadow": "#F0F0F0"
+                }
+            }
+        },
+        "schema_version": 1
+    },
+    "version": "1.0"
+}

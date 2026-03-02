@@ -1,0 +1,37 @@
+# Steelbore Theme for Alacritty
+# Version: 1.0
+# Author: Mohamed Hammd
+# License: GPL3+
+# URL: https://steelbore.com
+
+[colors.primary]
+background = "#000027"
+foreground = "#D98E32"
+
+[colors.cursor]
+text = "#000027"
+cursor = "#E6E6F0"
+
+[colors.selection]
+text = "#000027"
+background = "#4B7EB0"
+
+[colors.normal]
+black   = "#000027"
+red     = "#FF5C5C"
+green   = "#50FA7B"
+yellow  = "#D98E32"
+blue    = "#4B7EB0"
+magenta = "#BD93F9"
+cyan    = "#8BE9FD"
+white   = "#E6E6F0"
+
+[colors.bright]
+black   = "#6272A4"
+red     = "#FF6E6E"
+green   = "#69FF94"
+yellow  = "#FFFFA5"
+blue    = "#D6ACFF"
+magenta = "#FF92DF"
+cyan    = "#A4FFFF"
+white   = "#FFFFFF"

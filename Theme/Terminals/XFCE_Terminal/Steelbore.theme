@@ -1,0 +1,18 @@
+# Steelbore Theme for XFCE Terminal
+# Version: 1.0
+# Author: Mohamed Hammd
+# License: GPL3+
+# URL: https://steelbore.com
+
+[Scheme]
+Name=Steelbore
+ColorBackground=#000027
+ColorForeground=#D98E32
+ColorCursor=#E6E6F0
+ColorCursorUseDefault=FALSE
+ColorSelection=#4B7EB0
+ColorSelectionUseDefault=FALSE
+ColorBold=#E6E6F0
+ColorBoldUseDefault=FALSE
+TabActivityColor=#FF5C5C
+ColorPalette=#000027;#FF5C5C;#50FA7B;#D98E32;#4B7EB0;#BD93F9;#8BE9FD;#E6E6F0;#6272A4;#FF6E6E;#69FF94;#FFFFA5;#D6ACFF;#FF92DF;#A4FFFF;#FFFFFF

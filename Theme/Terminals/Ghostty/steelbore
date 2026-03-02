@@ -1,0 +1,31 @@
+# Steelbore Theme for Ghostty
+# Version: 1.0
+# Author: Mohamed Hammd
+# License: GPL3+
+# URL: https://steelbore.com
+
+background = 000027
+foreground = d98e32
+cursor-color = e6e6f0
+selection-background = 4b7eb0
+selection-foreground = 000027
+
+# Normal colors
+palette = 0=#000027
+palette = 1=#ff5c5c
+palette = 2=#50fa7b
+palette = 3=#d98e32
+palette = 4=#4b7eb0
+palette = 5=#bd93f9
+palette = 6=#8be9fd
+palette = 7=#e6e6f0
+
+# Bright colors
+palette = 8=#6272a4
+palette = 9=#ff6e6e
+palette = 10=#69ff94
+palette = 11=#ffffa5
+palette = 12=#d6acff
+palette = 13=#ff92df
+palette = 14=#a4ffff
+palette = 15=#ffffff

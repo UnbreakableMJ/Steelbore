@@ -1,0 +1,62 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Steelbore (Zen)",
+    "description": "The Steelbore Standard visual identity for Zen Browser. Charcoal Navy base with Vibrant Orange highlights.",
+    "author": "Mohamed Hammd",
+    "developer": {
+        "name": "Mohamed Hammd",
+        "url": "https://steelbore.com"
+    },
+    "license": "GPL3+",
+    "homepage_url": "https://steelbore.com",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "steelbore-zen-theme@steelbore.com",
+            "strict_min_version": "63.0"
+        }
+    },
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "theme": {
+        "images": {
+            "theme_frame": "background.png"
+        },
+        "colors": {
+            "frame": "#0E141D",
+            "frame_inactive": "#0E141D",
+            "tab_background_text": "#F0F0F0",
+            "toolbar": "#142E46",
+            "toolbar_text": "#F0F0F0",
+            "toolbar_field": "#0E141D",
+            "toolbar_field_text": "#FE6B00",
+            "toolbar_field_border": "#142E46",
+            "toolbar_field_focus": "#142E46",
+            "toolbar_top_separator": "#142E46",
+            "toolbar_bottom_separator": "#0E141D",
+            "tab_line": "#FE6B00",
+            "tab_loading": "#FE6B00",
+            "tab_selected": "#142E46",
+            "tab_text": "#F0F0F0",
+            "ntp_background": "#0E141D",
+            "ntp_text": "#FE6B00",
+            "popup": "#0E141D",
+            "popup_text": "#F0F0F0",
+            "popup_border": "#142E46",
+            "popup_highlight": "#FE6B00",
+            "popup_highlight_text": "#0E141D",
+            "sidebar": "#0E141D",
+            "sidebar_text": "#F0F0F0",
+            "sidebar_border": "#142E46",
+            "sidebar_highlight": "#FE6B00",
+            "sidebar_highlight_text": "#0E141D",
+            "bookmark_text": "#FE6B00",
+            "button_background_hover": "#142E46",
+            "button_background_active": "#FE6B00",
+            "icons": "#FE6B00",
+            "icons_attention": "#10B981"
+        }
+    }
+}

@@ -1,0 +1,115 @@
+# Steelbore Theme for Lapce
+# Version: 1.0
+# Author: Mohamed Hammd
+# License: GPL3+
+# URL: https://steelbore.com
+
+[theme]
+name = "Steelbore"
+author = "Mohamed Hammd"
+color-theme.name = "Steelbore"
+color-theme.type = "dark"
+
+[color-theme.ui]
+# Editor
+"editor.background" = "#000027"
+"editor.foreground" = "#E6E6F0"
+"editor.caret" = "#E6E6F0"
+"editor.selection" = "#4B7EB040"
+"editor.current-line" = "#050530"
+"editor.line-number" = "#6272A4"
+"editor.active-line-number" = "#E6E6F0"
+"editor.visible-whitespace" = "#6272A440"
+"editor.indent-guide" = "#6272A420"
+"editor.sticky-header.background" = "#050530"
+"editor.drag-drop-background" = "#4B7EB040"
+"editor.drag-drop-tab-background" = "#050530"
+
+# Panel
+"panel.background" = "#050530"
+"panel.foreground" = "#E6E6F0"
+"panel.foreground.dim" = "#6272A4"
+"panel.hovered.background" = "#142E46"
+"panel.hovered.foreground" = "#E6E6F0"
+"panel.hovered.active.foreground" = "#FE6B00"
+"panel.current.background" = "#4B7EB040"
+"panel.current.foreground" = "#D98E32"
+
+# Status Bar
+"status.background" = "#000027"
+"status.foreground" = "#6272A4"
+"status.modal.background" = "#050530"
+
+# Tabs
+"tab.active.background" = "#000027"
+"tab.active.foreground" = "#D98E32"
+"tab.active.underline" = "#FE6B00"
+"tab.inactive.background" = "#050530"
+"tab.inactive.foreground" = "#6272A4"
+
+# Scroll Bar
+"scroll-bar" = "#6272A430"
+"scroll-bar.hovered" = "#6272A460"
+
+# Completion / Palette
+"completion.background" = "#050530"
+"completion.current" = "#4B7EB040"
+
+# Source Control
+"source-control.added" = "#50FA7B"
+"source-control.modified" = "#D98E32"
+"source-control.removed" = "#FF5C5C"
+
+# Errors / Warnings
+"error" = "#FF5C5C"
+"warn" = "#D98E32"
+
+# Link
+"link" = "#4B7EB0"
+
+[color-theme.syntax]
+"comment" = { color = "#6272A4", italic = true }
+"keyword" = { color = "#4B7EB0", bold = true }
+"storage" = { color = "#4B7EB0", bold = true }
+"string" = { color = "#50FA7B" }
+"string.escape" = { color = "#FF5C5C" }
+"number" = { color = "#D98E32" }
+"constant" = { color = "#D98E32" }
+"type" = { color = "#8BE9FD" }
+"function" = { color = "#8BE9FD" }
+"function.method" = { color = "#8BE9FD" }
+"variable" = { color = "#E6E6F0" }
+"variable.other.member" = { color = "#50FA7B" }
+"property" = { color = "#50FA7B" }
+"operator" = { color = "#E6E6F0" }
+"punctuation" = { color = "#E6E6F0" }
+"tag" = { color = "#FF5C5C" }
+"attribute" = { color = "#50FA7B" }
+"label" = { color = "#BD93F9" }
+"namespace" = { color = "#BD93F9" }
+"markup.heading" = { color = "#D98E32", bold = true }
+"markup.bold" = { bold = true }
+"markup.italic" = { italic = true }
+"markup.link.url" = { color = "#4B7EB0" }
+"markup.link.text" = { color = "#8BE9FD" }
+"markup.raw" = { color = "#50FA7B" }
+
+[color-theme.terminal]
+background = "#000027"
+foreground = "#D98E32"
+black = "#000027"
+red = "#FF5C5C"
+green = "#50FA7B"
+yellow = "#D98E32"
+blue = "#4B7EB0"
+magenta = "#BD93F9"
+cyan = "#8BE9FD"
+white = "#E6E6F0"
+bright-black = "#6272A4"
+bright-red = "#FF6E6E"
+bright-green = "#69FF94"
+bright-yellow = "#FFFFA5"
+bright-blue = "#D6ACFF"
+bright-magenta = "#FF92DF"
+bright-cyan = "#A4FFFF"
+bright-white = "#FFFFFF"
